@@ -1,0 +1,384 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Seguidor_de_linea.o
+resetVec CODE 0 726 726 3 2
+code CODE 0 729 729 D7 2
+udata_bank0 BANK0 1 20 20 2 1
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 22-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 22-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 0-725 2
+CONST 800-1FFF 2
+ENTRY 0-725 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 0-725 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 0-725 2
+STRCODE 800-1FFF 2
+STRING 0-725 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Seguidor_de_linea.o
+726 resetVec CODE >48:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+726 resetVec CODE >49:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+728 resetVec CODE >50:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+729 code CODE >54:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+729 code CODE >56:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72A code CODE >57:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72B code CODE >60:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72C code CODE >61:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72D code CODE >62:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72E code CODE >63:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+72F code CODE >64:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+730 code CODE >66:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+731 code CODE >67:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+732 code CODE >68:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+733 code CODE >69:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+734 code CODE >70:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+735 code CODE >71:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+736 code CODE >72:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+737 code CODE >76:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+738 code CODE >77:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+738 code CODE >81:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+739 code CODE >82:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73A code CODE >86:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73B code CODE >87:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73C code CODE >88:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73D code CODE >89:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73E code CODE >90:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+73F code CODE >91:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+740 code CODE >95:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+741 code CODE >96:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+742 code CODE >97:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+743 code CODE >98:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+744 code CODE >99:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+745 code CODE >100:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+746 code CODE >101:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+747 code CODE >105:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+748 code CODE >106:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+749 code CODE >107:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74A code CODE >108:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74B code CODE >109:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74C code CODE >110:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74D code CODE >111:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74E code CODE >115:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+74F code CODE >116:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+750 code CODE >117:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+751 code CODE >118:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+752 code CODE >119:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+753 code CODE >120:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+754 code CODE >121:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+755 code CODE >122:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+756 code CODE >126:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+757 code CODE >127:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+758 code CODE >128:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+759 code CODE >129:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75A code CODE >130:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75B code CODE >131:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75C code CODE >132:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75D code CODE >133:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75E code CODE >137:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+75F code CODE >138:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+760 code CODE >139:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+761 code CODE >140:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+762 code CODE >141:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+763 code CODE >142:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+764 code CODE >143:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+765 code CODE >144:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+766 code CODE >145:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+767 code CODE >148:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+768 code CODE >149:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+769 code CODE >150:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76A code CODE >151:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76B code CODE >152:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76C code CODE >153:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76D code CODE >154:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76E code CODE >155:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+76F code CODE >156:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+770 code CODE >160:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+771 code CODE >161:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+772 code CODE >162:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+773 code CODE >163:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+774 code CODE >164:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+775 code CODE >165:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+776 code CODE >166:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+777 code CODE >167:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+778 code CODE >168:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+779 code CODE >169:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77A code CODE >173:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77B code CODE >174:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77C code CODE >175:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77D code CODE >176:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77E code CODE >177:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+77F code CODE >178:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+780 code CODE >179:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+781 code CODE >180:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+782 code CODE >181:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+783 code CODE >182:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+784 code CODE >186:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+785 code CODE >187:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+786 code CODE >188:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+787 code CODE >189:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+788 code CODE >190:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+789 code CODE >191:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78A code CODE >192:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78B code CODE >193:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78C code CODE >194:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78D code CODE >195:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78E code CODE >196:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+78F code CODE >202:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+790 code CODE >203:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+791 code CODE >204:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+792 code CODE >208:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+793 code CODE >209:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+794 code CODE >210:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+795 code CODE >214:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+796 code CODE >215:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+797 code CODE >216:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+798 code CODE >220:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+799 code CODE >221:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79A code CODE >222:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79B code CODE >223:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79C code CODE >230:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79D code CODE >231:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79E code CODE >232:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+79F code CODE >236:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A0 code CODE >237:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A1 code CODE >238:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A2 code CODE >242:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A3 code CODE >243:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A4 code CODE >244:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A5 code CODE >248:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A6 code CODE >249:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A7 code CODE >250:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A8 code CODE >251:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7A9 code CODE >258:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AA code CODE >259:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AB code CODE >260:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AC code CODE >264:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AD code CODE >265:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AE code CODE >266:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7AF code CODE >267:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B0 code CODE >268:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B1 code CODE >269:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B2 code CODE >273:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B3 code CODE >274:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B4 code CODE >275:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B5 code CODE >282:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B6 code CODE >283:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B7 code CODE >284:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B8 code CODE >288:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7B9 code CODE >289:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BA code CODE >290:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BB code CODE >291:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BC code CODE >292:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BD code CODE >296:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BE code CODE >297:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7BF code CODE >298:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C0 code CODE >305:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C1 code CODE >306:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C2 code CODE >307:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C3 code CODE >311:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C4 code CODE >312:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C5 code CODE >313:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C6 code CODE >320:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C7 code CODE >321:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C8 code CODE >322:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7C9 code CODE >329:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CA code CODE >330:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CB code CODE >331:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CC code CODE >335:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CD code CODE >336:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CE code CODE >337:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CF code CODE >342:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7CF code CODE >343:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D0 code CODE >344:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D1 code CODE >345:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D2 code CODE >346:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D2 code CODE >347:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D3 code CODE >348:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D4 code CODE >350:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D4 code CODE >351:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D5 code CODE >352:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D6 code CODE >353:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D6 code CODE >354:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D7 code CODE >355:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D8 code CODE >356:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D9 code CODE >357:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7D9 code CODE >358:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DA code CODE >359:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DB code CODE >360:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DB code CODE >361:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DC code CODE >362:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DD code CODE >363:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DD code CODE >364:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DE code CODE >365:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7DF code CODE >366:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E0 code CODE >367:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E0 code CODE >368:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E1 code CODE >369:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E2 code CODE >370:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E2 code CODE >371:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E3 code CODE >372:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E4 code CODE >373:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E4 code CODE >374:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E5 code CODE >375:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E6 code CODE >376:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E7 code CODE >377:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E7 code CODE >378:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E8 code CODE >379:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E9 code CODE >380:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7E9 code CODE >381:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EA code CODE >382:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EB code CODE >383:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EB code CODE >384:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EC code CODE >385:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7ED code CODE >386:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EE code CODE >387:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EE code CODE >388:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7EF code CODE >389:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F0 code CODE >390:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F0 code CODE >391:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F1 code CODE >392:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F2 code CODE >394:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F2 code CODE >395:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F3 code CODE >396:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F4 code CODE >397:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F5 code CODE >398:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F5 code CODE >399:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F6 code CODE >400:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F7 code CODE >401:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F7 code CODE >402:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F8 code CODE >403:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F9 code CODE >404:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7F9 code CODE >405:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FA code CODE >406:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FB code CODE >407:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FC code CODE >408:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FC code CODE >409:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FD code CODE >410:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FE code CODE >411:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FE code CODE >412:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+7FF code CODE >413:D:\Desktop\Electro digital\Digitales 2\Seguidor_de_linea.X\Seguidor_de_linea.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 22 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresetVec 0 0 ABS 0 resetVec -
+__HresetVec 0 0 ABS 0 resetVec -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 22 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVec 0 726 E4C 3 2
+code 0 729 E52 D7 2
+udata_bank0 1 20 20 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
